@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Площ за пръскане (квадратни метри)"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_text_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="примерно. 100"
+        android:inputType="number"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/label_application_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Пропорция на препарата (Л/декър)"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_text_application_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="примерно. 10"
+        android:inputType="numberDecimal"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/label_sprayer_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Размера на вашата пръскачка в литри"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_text_sprayer_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="примерно. 1.5"
+        android:inputType="numberDecimal"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/label_dilution_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Пропорция за разтваряне на препарата"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edit_text_dilution_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:hint="примерно 1:50"/>
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Пресметни"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
